@@ -1,5 +1,21 @@
 .activateCursorModeButton {
     height: 70%;
     border-radius: 10px;
-    border: 0;
+    border: 1px solid gray;
+    background-color: #f4eeff;
+}
+.activateCursorModeButton:hover {
+    cursor: pointer;
+    box-shadow:
+        0 3px 5px 0 rgba(0, 0, 0, 0.2),
+        0 1px 6px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease 0s;
+}
+
+.active {
+    background-color: #ece6f7;
+    box-shadow:
+        0 3px 5px 0 rgba(0, 0, 0, 0.2),
+        0 1px 6px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow:; */
 }

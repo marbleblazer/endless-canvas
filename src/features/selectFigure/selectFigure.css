@@ -2,3 +2,7 @@
     height: 70%;
     border-radius: 10px;
 }
+
+.select-figure:hover {
+    cursor: pointer;
+}

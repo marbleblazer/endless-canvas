@@ -2,17 +2,17 @@ import { useGlobalContext } from 'app/App';
 import './activateCursorModeButton.css';
 
 export default function ActivateCursorModeButton() {
-    const [_, setState] = useGlobalContext();
+    const [state, setState] = useGlobalContext();
 
     const handleClick = () => {
-        setState(prev => ({ ...prev, mode: prev.mode === 'cursor' ? 'draw' : 'cursor' }));
+        setState(prev => ({ ...prev, mode: 'cursor' }));
     };
 
     return (
         <button
             type='button'
             title='Cursor mode'
-            className='activateCursorModeButton'
+            className={`activateCursorModeButton ${state.mode === 'cursor' ? 'active' : ''}`}
             onClick={handleClick}
         >
             Cursor Mode
